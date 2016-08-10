@@ -5,7 +5,7 @@ module.exports = function (grunt) {
             options: {
                 force: true
             },
-            dist: "dist/*"
+            dist: ["dist/*", 'doc/*']
         },
         copy: {
             dist: {
@@ -25,6 +25,14 @@ module.exports = function (grunt) {
                     'dist/date.min.js': ['dist/date.js']
                 }
             }
+        },
+        jsdoc: {
+            dist: {
+                src: ['src/*.js'],
+                options: {
+                    destination: 'doc'
+                }
+            }
         }
     });
 
@@ -33,5 +41,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-jsdoc');
 
-    grunt.registerTask('test', ['clean', 'copy', 'uglify']);
+    grunt.registerTask('test', ['clean', 'jsdoc', 'copy', 'uglify']);
 };
