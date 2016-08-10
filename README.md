@@ -43,7 +43,7 @@ var muchencuteDate = require('muchencute-date');
 Assuming you hanve already installed date.js.
 
 ```javascript
-alert(new Date().format('yyyy-MM-dd');
+alert(new Date().format('yyyy-MM-dd'));
 ```
 
 ## Examples
