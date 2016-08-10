@@ -21,11 +21,24 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
+/**
+ * The built in Date object
+ * @external Date
+ */
 ;(function () {
 
     "use strict";
 
-    Date.prototype.format = function (fmt) {
+    /**
+     * Returns a string that contributes using the given pattern.
+     * The following pattern letters are defined:
+     *
+     * @function external:Date#format
+     * @param {String} pattern The pattern describing the date and time format
+     * @returns {String|undefined} A string if the pattern is right, `undefined` otherwise.
+     */
+    Date.prototype.format = function (pattern) {
 
         var map = {
             "M+": this.getMonth() + 1,   // 月份
@@ -37,17 +50,17 @@
             "S": this.getMilliseconds()  // 毫秒
         };
 
-        if (/(y+)/.test(fmt)) {
-            fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        if (/(y+)/.test(pattern)) {
+            pattern = pattern.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
         }
 
         for (var key in map) {
-            if (new RegExp("(" + key + ")").test(fmt)) {
-                fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (map[key]) : (("00" + map[key]).substr(("" + map[key]).length)));
+            if (new RegExp("(" + key + ")").test(pattern)) {
+                pattern = pattern.replace(RegExp.$1, (RegExp.$1.length == 1) ? (map[key]) : (("00" + map[key]).substr(("" + map[key]).length)));
             }
         }
 
-        return fmt;
+        return pattern;
     };
 
     Date.prototype.toYmd = function (isFirst) {
