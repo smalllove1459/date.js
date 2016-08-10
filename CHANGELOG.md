@@ -1,0 +1,5 @@
+- v1.0.0-rc1
+    - date: 2016-8-10
+    - changes:
+        - Add format method
+        - Add toYmd method
