@@ -33,13 +33,17 @@ module.exports = function (grunt) {
                     destination: 'doc'
                 }
             }
+        },
+        qunit: {
+            all: ['test/qunit/*.html']
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-jsdoc');
 
-    grunt.registerTask('test', ['clean', 'jsdoc', 'copy', 'uglify']);
+    grunt.registerTask('test', ['clean', 'qunit', 'jsdoc', 'copy', 'uglify']);
 };
