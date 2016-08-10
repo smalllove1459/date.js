@@ -63,6 +63,12 @@
         return pattern;
     };
 
+    /**
+     * Returns a new native Date object which is the first or the last day of the month.
+     *
+     * @param {Boolean} isFirst The flag standing for the first or the last day of the month
+     * @returns {Date} a new native Date object
+     */
     Date.prototype.toYmd = function (isFirst) {
 
         var parts = this.format('yyyy-MM').split(/-|\//);
