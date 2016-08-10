@@ -1,6 +1,20 @@
 {
-  "name": "date.js",
+  "name": "muchencute-date",
+  "description": "Extensions for native JavaScript Date object",
   "version": "1.0.0",
+  "homepage": "http://muchencute.com",
+  "author": "Muchencute <hello@muchencute.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muchencute/date.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muchencute/date.js/issues"
+  },
+  "main": "./dist/date.js",
+  "keywords": [
+    "date"
+  ],
   "devDependencies": {
     "grunt": "*",
     "grunt-cli": "*",
@@ -13,5 +27,6 @@
   },
   "scripts": {
     "test": "grunt test -v"
-  }
+  },
+  "license": "MIT"
 }
