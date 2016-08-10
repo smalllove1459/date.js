@@ -5,7 +5,7 @@ module.exports = function (grunt) {
             options: {
                 force: true
             },
-            dist: "dist/*"
+            dist: ["dist/*", 'doc/*']
         },
         copy: {
             dist: {
@@ -25,13 +25,25 @@ module.exports = function (grunt) {
                     'dist/date.min.js': ['dist/date.js']
                 }
             }
+        },
+        jsdoc: {
+            dist: {
+                src: ['src/*.js'],
+                options: {
+                    destination: 'doc'
+                }
+            }
+        },
+        qunit: {
+            all: ['test/qunit/*.html']
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-jsdoc');
 
-    grunt.registerTask('test', ['clean', 'copy', 'uglify']);
+    grunt.registerTask('test', ['clean', 'qunit', 'jsdoc', 'copy', 'uglify']);
 };
