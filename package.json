@@ -1,7 +1,7 @@
 {
   "name": "muchencute-date",
   "description": "Extensions for native JavaScript Date object",
-  "version": "1.0.0",
+  "version": "1.0.0-rc1",
   "homepage": "http://muchencute.com",
   "author": "Muchencute <hello@muchencute.com>",
   "repository": {
