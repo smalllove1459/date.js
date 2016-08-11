@@ -28,7 +28,7 @@ If you use a modular script loader then you can require date.js just like any ot
 
 ```javascript
 require(['muchencute-date'], function() {
-    var someDateStr = new Date().format('yyyy-MM-dd');
+    var someDateStr = new Date().format('YYYY-MM-DD');
 });
 ```
 
@@ -43,7 +43,7 @@ var muchencuteDate = require('muchencute-date');
 Assuming you hanve already installed date.js.
 
 ```javascript
-alert(new Date().format('yyyy-MM-dd'));
+alert(new Date().format('YYYY-MM-DD'));
 ```
 
 ## Examples
