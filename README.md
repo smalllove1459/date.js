@@ -21,46 +21,23 @@ bower install muchencute-date --save
 
 ### Alternative installation
 - [Download ZIP](https://github.com/muchencute/date.js/archive/master.zip)
-- [Download from nuget](https://www.nuget.org/packages/muchencute/)
-
-### AMD support
-If you use a modular script loader then you can require date.js just like any other module:
-
-```javascript
-require(['muchencute-date'], function() {
-    var someDateStr = new Date().format('YYYY-MM-DD');
-});
-```
-
-### CommonJS module support
-If you use a CommonJS compatible environment you can use the `require` function to import date.js
-
-```javascript
-var muchencuteDate = require('muchencute-date');
-```
 
 ## Basic usage
 Assuming you hanve already installed date.js.
 
 ```javascript
-alert(new Date().format('YYYY-MM-DD'));
+new Date().format('YYYY-MM-DD');
+new Date('2016-08').toYmd(true);
 ```
 
-## Examples
-- [format]()
-- [toYmd]()
-
 ## Resources
-- [Date]()
+- [Native JavaScript Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
 ## Community
 - [GitHub](https://github.com/muchencute/date.js/issues)
 - [Twitter](https://twitter.com/HelloMuchencute)
 
-## Contributing
-If you would like to help us in writing the code, please take a look into [CONTRIBUTING.md](https://github.com/muchencute/date.js/blob/master/CONTRIBUTING.md)
-
 ## Copyright and license
 date.js is release under the [MIT license](https://github.com/muchencute/date.js/blob/master/LICENSE).
 
-Copyrights belongs to Muchencute
+Copyrights belongs to 湖南牧米网络科技有限公司
