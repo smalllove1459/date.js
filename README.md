@@ -37,9 +37,6 @@ new Date('2016-08').toYmd(true);
 - [GitHub](https://github.com/muchencute/date.js/issues)
 - [Twitter](https://twitter.com/HelloMuchencute)
 
-## Contributing
-If you would like to help us in writing the code, please take a look into [CONTRIBUTING.md](https://github.com/muchencute/date.js/blob/master/CONTRIBUTING.md)
-
 ## Copyright and license
 date.js is release under the [MIT license](https://github.com/muchencute/date.js/blob/master/LICENSE).
 
