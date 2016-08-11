@@ -23,27 +23,12 @@ bower install muchencute-date --save
 - [Download ZIP](https://github.com/muchencute/date.js/archive/master.zip)
 - [Download from nuget](https://www.nuget.org/packages/muchencute/)
 
-### AMD support
-If you use a modular script loader then you can require date.js just like any other module:
-
-```javascript
-require(['muchencute-date'], function() {
-    var someDateStr = new Date().format('YYYY-MM-DD');
-});
-```
-
-### CommonJS module support
-If you use a CommonJS compatible environment you can use the `require` function to import date.js
-
-```javascript
-var muchencuteDate = require('muchencute-date');
-```
-
 ## Basic usage
 Assuming you hanve already installed date.js.
 
 ```javascript
-alert(new Date().format('YYYY-MM-DD'));
+new Date().format('YYYY-MM-DD');
+new Date('2016-08').toYmd(true);
 ```
 
 ## Examples
@@ -51,7 +36,7 @@ alert(new Date().format('YYYY-MM-DD'));
 - [toYmd]()
 
 ## Resources
-- [Date]()
+- [Native JavaScript Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
 ## Community
 - [GitHub](https://github.com/muchencute/date.js/issues)
