@@ -23,7 +23,8 @@
     "grunt-contrib-uglify": "*",
     "grunt-contrib-concat": "*",
     "grunt-contrib-qunit": "*",
-    "grunt-jsdoc": "*"
+    "grunt-jsdoc": "*",
+    "ink-docstrap": "*"
   },
   "scripts": {
     "test": "grunt test -v"

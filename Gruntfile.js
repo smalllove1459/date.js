@@ -46,6 +46,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-jsdoc');
+    grunt.loadNpmTasks('ink-docstrap');
 
     grunt.registerTask('test', ['clean', 'qunit', 'jsdoc', 'copy', 'uglify']);
 };
