@@ -43,7 +43,7 @@ var muchencuteDate = require('muchencute-date');
 Assuming you hanve already installed date.js.
 
 ```javascript
-alert(new Date().format('yyyy-MM-dd');
+alert(new Date().format('yyyy-MM-dd'));
 ```
 
 ## Examples
@@ -55,11 +55,10 @@ alert(new Date().format('yyyy-MM-dd');
 
 ## Community
 - [GitHub](https://github.com/muchencute/date.js/issues)
-- [Twitter](https://twitter.com/muchencute)
+- [Twitter](https://twitter.com/HelloMuchencute)
 
 ## Contributing
-If you would like to help us in writing the code, please take a look into [CONTRIBUTING.md]
-(https://github.com/muchencute/date.js/blob/master/CONTRIBUTING.md)
+If you would like to help us in writing the code, please take a look into [CONTRIBUTING.md](https://github.com/muchencute/date.js/blob/master/CONTRIBUTING.md)
 
 ## Copyright and license
 date.js is release under the [MIT license](https://github.com/muchencute/date.js/blob/master/LICENSE).

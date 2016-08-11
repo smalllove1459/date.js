@@ -30,7 +30,9 @@ module.exports = function (grunt) {
             dist: {
                 src: ['src/*.js'],
                 options: {
-                    destination: 'doc'
+                    destination: 'doc',
+                    template: 'node_modules/ink-docstrap/template',
+                    configure: 'node_modules/ink-docstrap/template/jsdoc.conf.json'
                 }
             }
         },
@@ -44,6 +46,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-jsdoc');
+    grunt.loadNpmTasks('ink-docstrap');
 
     grunt.registerTask('test', ['clean', 'qunit', 'jsdoc', 'copy', 'uglify']);
 };
