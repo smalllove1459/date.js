@@ -21,7 +21,6 @@ bower install muchencute-date --save
 
 ### Alternative installation
 - [Download ZIP](https://github.com/muchencute/date.js/archive/master.zip)
-- [Download from nuget](https://www.nuget.org/packages/muchencute/)
 
 ## Basic usage
 Assuming you hanve already installed date.js.
@@ -30,10 +29,6 @@ Assuming you hanve already installed date.js.
 new Date().format('YYYY-MM-DD');
 new Date('2016-08').toYmd(true);
 ```
-
-## Examples
-- [format]()
-- [toYmd]()
 
 ## Resources
 - [Native JavaScript Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
@@ -48,4 +43,4 @@ If you would like to help us in writing the code, please take a look into [CONTR
 ## Copyright and license
 date.js is release under the [MIT license](https://github.com/muchencute/date.js/blob/master/LICENSE).
 
-Copyrights belongs to Muchencute
+Copyrights belongs to 湖南牧米网络科技有限公司
